@@ -33,7 +33,7 @@ app.post('/:id', urlAlias)
 app.get('/my-urls', getMyUrlList)
 
 
-
+createDatabase()
 
 
 app.listen(PORT, () => {
