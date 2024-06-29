@@ -34,7 +34,7 @@ function urlIsValid (url) {
 
 async function createDatabase () {
 	try {
-		await db.query(`DROP DATABASE url_briefer;`)
+		// await db.query(`DROP DATABASE url_briefer;`)
 		await db.query(`CREATE DATABASE url_briefer;`)
 		await db.query(`USE url_briefer;`)
 
@@ -58,6 +58,8 @@ async function createDatabase () {
 			);
 		`)
 
+
+		console.log('Database connected')
 
 
 	} catch (err) {
