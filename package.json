@@ -1,0 +1,28 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "A simple API that shortens long websites URL to shorter equivalent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.10.1",
+    "pg": "^8.12.0",
+    "short-id": "^0.1.0-1",
+    "short-uuid": "^5.2.0",
+    "sql": "^0.78.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
