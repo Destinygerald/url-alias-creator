@@ -2,6 +2,7 @@ const express = require('express')
 const bcrypt = require('bcrypt')
 const cors = require('cors')
 const { db } = require('./database/query.js')
+const { createDatabase } = require('./helpers/helperFunctions.js')
 const { addUser, getUser, login, urlAlias , createUrlAlias, getMyUrlList } = require('./controllers/controllers.js')
 require('dotenv').config()
 
@@ -30,6 +31,9 @@ app.post('/create-url-alias', createUrlAlias)
 app.post('/:id', urlAlias)
 
 app.get('/my-urls', getMyUrlList)
+
+
+
 
 
 app.listen(PORT, () => {
